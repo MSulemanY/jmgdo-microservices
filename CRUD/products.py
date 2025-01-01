@@ -17,5 +17,7 @@ products = [
 @app.route('/products', methods=['GET'])
 def get_products():
     return jsonify(products)
+
     
+
 app.run(port=5000,debug=True)
