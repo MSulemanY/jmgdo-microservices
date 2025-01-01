@@ -14,5 +14,8 @@ products = [
 #
 #Add all the REST API end-points here
 #
-
+@app.route('/products', methods=['GET'])
+def get_products():
+    return jsonify(products)
+    
 app.run(port=5000,debug=True)
